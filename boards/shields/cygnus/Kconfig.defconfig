@@ -6,6 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+# enable display drivers
+CONFIG_ZMK_DISPLAY=y
+
 endif
 
 if SHIELD_CYGNUS_DONGLE || SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
@@ -21,8 +24,7 @@ CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 2
     
-# enable display drivers
-CONFIG_ZMK_DISPLAY=y
+endif 
 
 if ZMK_DISPLAY
 
